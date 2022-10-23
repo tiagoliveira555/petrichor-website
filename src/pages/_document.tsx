@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* Add external liks */}
+          {/* Add external links */}
         </Head>
 
         <body>
