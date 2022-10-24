@@ -22,9 +22,6 @@ export function Button({ text, hasLink, noBgButton }: ButtonTypes) {
             {text} 
             
           </a>
-          {(
-            <AiOutlineRight size={20} fontWeight='700' />
-          )}
         </NormalButton>
       )}
     </>
