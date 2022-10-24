@@ -1,7 +1,8 @@
 import { Menubar } from "../components/Menubar" 
 import { Button } from "../components/Button"
 
-import { Title, ButtonGroup } from "./styles"
+import { Title, ButtonGroup, CardGroup } from "./styles"
+import { CardComponent } from "../components/CardComponent"
 
 export default function Home() {
   return(
@@ -17,7 +18,10 @@ export default function Home() {
         </ButtonGroup>
       </header>
       <main>
-
+        <CardGroup>
+          <CardComponent></CardComponent>
+          <CardComponent></CardComponent>
+        </CardGroup>
       </main>
     </>
   )

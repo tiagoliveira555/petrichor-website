@@ -24,3 +24,9 @@ export const ButtonGroup = styled.div`
   
   gap: 2rem;
 `
+
+export const CardGroup = styled.div`
+  display: flex;
+  gap: 24px;
+  padding: 20px;
+`
