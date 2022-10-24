@@ -5,7 +5,7 @@ export function Menubar() {
   return (
     <Menu>
       <Logo href="#">
-        <Image width="42px" height="42px" src="/images/logo.svg" alt="Petrichor Logo" />
+        <Image width="36px" height="36px" src="/assets/logo.svg" alt="Petrichor Logo" />
       </Logo>
 
       <Navbar>

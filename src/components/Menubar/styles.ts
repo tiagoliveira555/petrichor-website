@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Menu = styled.div`
-  padding: 10px 180px;
+  padding: 20px 160px;
 
   display: flex;
   align-items: center;
@@ -9,8 +9,8 @@ export const Menu = styled.div`
 `
 
 export const Logo = styled.a`
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
 `
 
 export const Navbar = styled.nav`
@@ -18,12 +18,12 @@ export const Navbar = styled.nav`
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 2rem;
+    gap: 92px;
 
     li {
       color: var(--subtitle-color);
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 1.25rem;
     }
   }
 `
