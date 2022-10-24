@@ -12,7 +12,7 @@ export default function Home() {
         <Title>Top-notch code from <span>outstanding</span> engineers.</Title>
 
         <ButtonGroup>
-          <Button text="Contribua agora" hasArrow />
+          <Button text="Contribua agora ›" />
           <Button text="Saiba mais" hasLink="https://github.com/petrichor-foundation/petrichor-website" noBgButton />
         </ButtonGroup>
       </header>

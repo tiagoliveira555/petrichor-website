@@ -1,15 +1,12 @@
 import { NormalButton, NoBgButton } from './styles'
 
-import { AiOutlineRight } from 'react-icons/ai'
-
 type ButtonTypes = {
   text: string,
   hasLink?: string,
-  hasArrow?: boolean,
   noBgButton?: boolean,
 }
 
-export function Button({ text, hasLink, noBgButton, hasArrow }: ButtonTypes) {
+export function Button({ text, hasLink, noBgButton }: ButtonTypes) {
 
   // If the button receive opaqueButton, it style will be differet
   return (
@@ -25,7 +22,7 @@ export function Button({ text, hasLink, noBgButton, hasArrow }: ButtonTypes) {
             {text} 
             
           </a>
-          {hasArrow && (
+          {(
             <AiOutlineRight size={20} fontWeight='700' />
           )}
         </NormalButton>
