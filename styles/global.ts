@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 // Creating a GlobalStyle (root style) to set a default style in the app
-// I recommend to install the Styled-Components extesion to intellisense -> vscode-styled-components
+// I recommend to install the Styled-Components extesion to have the intellisense -> vscode-styled-components
 export const GlobalStyle = createGlobalStyle`
   
   /* Here we define the 'variables' with CSS code. Most used to aplly default colors  */
