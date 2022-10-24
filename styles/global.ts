@@ -13,15 +13,15 @@ export const GlobalStyle = createGlobalStyle`
     --subtitle-color: #2C2C2E;
     --text-color: #333333;
 
-    --opaque-color: #AEAEB2;
+    --gray: #AEAEB2;
 
     --blue: #007AFF;
+    --blue-opacity: #007AFF05;
   }
 
   html,
   body {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   
   * {
