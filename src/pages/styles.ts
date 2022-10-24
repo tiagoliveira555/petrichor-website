@@ -9,7 +9,7 @@ export const Title = styled.h1`
   font-weight: 800;
   color: var(--title-color);
 
-  margin: 120px auto 74px;
+  margin: 100px auto 74px;
 
   span {
     color: var(--blue);
