@@ -9,7 +9,7 @@ export const Title = styled.h1`
   font-weight: 800;
   color: var(--title-color);
 
-  margin: 120px auto 74px;
+  margin: 100px auto 74px;
 
   span {
     color: var(--blue);
@@ -23,4 +23,10 @@ export const ButtonGroup = styled.div`
   justify-content: center;
   
   gap: 2rem;
+`
+
+export const CardGroup = styled.div`
+  display: flex;
+  gap: 24px;
+  padding: 20px;
 `

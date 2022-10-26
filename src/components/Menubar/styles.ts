@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Menu = styled.div`
-  padding: 20px 160px;
+  padding: 20px 60px;
 
   display: flex;
   align-items: center;
