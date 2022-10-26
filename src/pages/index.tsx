@@ -8,8 +8,10 @@ import {
   ButtonGroup, 
   CardGroup, 
   CategoriesGroup,
-  AboutUs
+  AboutUs,
+  CompaniesGroup
 } from "./styles"
+import Image from "next/image"
 
 export default function Home() {
   return(
@@ -58,6 +60,16 @@ export default function Home() {
             fringilla libero erizzle get down get down away.
           </p>
         </AboutUs>
+
+        <CompaniesGroup>
+          <h3>Trusted by workers</h3>
+          <div className="companies">
+            <Image src='/assets/bradesco.svg' width='188px' height='42' alt='Bradesco' />
+            <Image src='/assets/marketData.svg' width='196px' height='42' alt='MarketData' />
+            <Image src='/assets/napice.svg' width='134px' height='42' alt='Napice' />
+            <Image src='/assets/brf.svg' width='89px' height='42' alt='BRF' />
+          </div>
+        </CompaniesGroup>
       </main>
     </>
   )

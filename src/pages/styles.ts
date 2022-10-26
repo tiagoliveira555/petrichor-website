@@ -63,3 +63,26 @@ export const AboutUs = styled.section`
     padding-bottom: 30px;
   }
 `
+
+export const CompaniesGroup = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 200px;
+
+  gap: 85px;
+
+  h3 {
+    font-size: 1.12rem;
+    color: var(--subtitle-color);
+    font-weight: 800;
+  }
+
+  .companies {
+    display: flex;
+    align-items: center;
+
+    gap: 100px;
+  }
+`
