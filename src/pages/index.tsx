@@ -1,8 +1,9 @@
 import { Menubar } from "../components/Menubar" 
 import { Button } from "../components/Button"
-
-import { Title, ButtonGroup, CardGroup } from "./styles"
 import { CardComponent } from "../components/CardComponent"
+import { RepoCategory } from "../components/RepoCategory"
+
+import { Title, ButtonGroup, CardGroup, CategoriesGroup } from "./styles"
 
 export default function Home() {
   return(
@@ -17,11 +18,21 @@ export default function Home() {
           <Button text="Saiba mais" hasLink="https://github.com/petrichor-foundation/petrichor-website" noBgButton />
         </ButtonGroup>
       </header>
+
       <main>
         <CardGroup>
-          <CardComponent></CardComponent>
-          <CardComponent></CardComponent>
+          <CardComponent />
+          <CardComponent />
         </CardGroup>
+
+        <CategoriesGroup>
+          <RepoCategory title="CLI Tools" description="Lorizzle ipsizzle dolizzle sit amet."/>
+          <RepoCategory title="Languages" description="Lorizzle ipsizzle dolizzle sit amet."/>
+          <RepoCategory title="Apps" description="Lorizzle ipsizzle dolizzle sit amet."/>
+          <RepoCategory title="Blockchain" description="Lorizzle ipsizzle dolizzle sit amet."/>
+          <RepoCategory title="Libraries" description="Lorizzle ipsizzle dolizzle sit amet."/>
+          <RepoCategory title="Automation" description="Lorizzle ipsizzle dolizzle sit amet."/>
+        </CategoriesGroup>
       </main>
     </>
   )

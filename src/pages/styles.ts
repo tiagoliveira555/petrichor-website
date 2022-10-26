@@ -28,5 +28,15 @@ export const ButtonGroup = styled.div`
 export const CardGroup = styled.div`
   display: flex;
   gap: 24px;
-  padding: 20px;
+  padding: 0 20px;
+`
+
+export const CategoriesGroup = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+
+  row-gap: 82px;
+
+  margin: 140px 230px 160px;
 `

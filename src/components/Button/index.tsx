@@ -20,7 +20,6 @@ export function Button({ text, hasLink, noBgButton }: ButtonTypes) {
         <NormalButton>
           <a href={hasLink}>
             {text} 
-            
           </a>
         </NormalButton>
       )}
