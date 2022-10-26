@@ -2,7 +2,7 @@ import { Menubar } from "../components/Menubar"
 import { Button } from "../components/Button"
 
 import { Title, ButtonGroup, CardGroup } from "./styles"
-import { CardComponent } from "../components/CardComponent"
+import { CardComponent } from "../components/Card"
 
 export default function Home() {
   return(
