@@ -25,13 +25,13 @@ export const ButtonGroup = styled.div`
   gap: 2rem;
 `
 
-export const CardGroup = styled.div`
+export const CardGroup = styled.section`
   display: flex;
   gap: 24px;
   padding: 0 20px;
 `
 
-export const CategoriesGroup = styled.div`
+export const CategoriesGroup = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -39,4 +39,27 @@ export const CategoriesGroup = styled.div`
   row-gap: 82px;
 
   margin: 140px 230px 160px;
+`
+
+export const AboutUs = styled.section`
+  margin: 0 160px 160px;
+
+  h3 {
+    font-size: 1.12rem;
+    color: var(--subtitle-color);
+    font-weight: 800;
+
+    padding-bottom: 42px;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 600;
+
+    line-height: 1.5rem;
+
+    color: var(--text-color);
+
+    padding-bottom: 30px;
+  }
 `
