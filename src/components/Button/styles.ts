@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const NormalButton = styled.button`
-  width: 250px;
+  min-width: 250px;
   height: 69px;
-  padding: 0 8px;
+  padding: 0 32px;
 
   cursor: pointer;
   border: none;
@@ -23,9 +23,9 @@ export const NormalButton = styled.button`
 `
 
 export const NoBgButton = styled.button`
-  width: 250px;
+  min-width: 250px;
   height: 69px;
-  padding: 0 8px;
+  padding: 0 32px;
 
   cursor: pointer;
   border: none;

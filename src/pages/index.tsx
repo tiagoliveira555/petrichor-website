@@ -2,6 +2,7 @@ import { Menubar } from "../components/Menubar"
 import { Button } from "../components/Button"
 import { CardComponent } from "../components/CardComponent"
 import { RepoCategory } from "../components/RepoCategory"
+import { SubSectionFooter } from "../components/SubSectionFooter"
 
 import { 
   Title, 
@@ -9,7 +10,8 @@ import {
   CardGroup, 
   CategoriesGroup,
   AboutUs,
-  CompaniesGroup
+  CompaniesGroup,
+  FooterSection
 } from "./styles"
 import Image from "next/image"
 
@@ -70,7 +72,17 @@ export default function Home() {
             <Image src='/assets/brf.svg' width='89px' height='42' alt='BRF' />
           </div>
         </CompaniesGroup>
+
+        <ButtonGroup>
+          <Button text="Submit your project 🎉" />
+        </ButtonGroup>
       </main>
+      
+      <footer>
+        <FooterSection>
+          <SubSectionFooter />
+        </FooterSection>
+      </footer>
     </>
   )
 }

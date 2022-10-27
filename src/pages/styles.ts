@@ -86,3 +86,16 @@ export const CompaniesGroup = styled.section`
     gap: 100px;
   }
 `
+
+export const FooterSection = styled.div`
+  width: 100%;
+  height: 287px;
+
+  background: var(--bg-content);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 180px;
+`
