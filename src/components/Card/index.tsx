@@ -13,7 +13,7 @@ export function CardComponent() {
     <Card>
       <ProjectName>Project Name</ProjectName>
       <ProjectDescription>
-        PLorizzle ipsizzle dolizzle sit amet, yo adipiscing elit. Nullam boofron
+        Plorizzle ipsizzle dolizzle sit amet, yo adipiscing elit. Nullam boofron
         check it out, volutpizzle.
       </ProjectDescription>
 
