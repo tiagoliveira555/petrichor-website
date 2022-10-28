@@ -23,7 +23,7 @@ export const Navbar = styled.nav`
     li {
       color: var(--subtitle-color);
       font-weight: 600;
-      font-size: 1.25rem;
+      font-size: 18px;
     }
   }
 `
