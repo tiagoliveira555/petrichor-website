@@ -3,7 +3,6 @@ import { createGlobalStyle } from 'styled-components'
 // Creating a GlobalStyle (root style) to set a default style in the app
 // I recommend to install the Styled-Components extesion to have the intellisense -> vscode-styled-components
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;800;900&display=swap');
   /* Here we define the 'variables' with CSS code. Most used to aplly default colors  */
   :root {
     --bg: #F2F2F7;
