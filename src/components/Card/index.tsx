@@ -17,9 +17,9 @@ export function CardComponent() {
       </ProjectDescription>
 
       <ProjectInfos>
-        <AiOutlineUsergroupAdd size={28} fontWeight='700' color="#AEAEB2"></AiOutlineUsergroupAdd>
+        <AiOutlineUsergroupAdd size={24} fontWeight='700' color="#AEAEB2"></AiOutlineUsergroupAdd>
         <InfoText>127</InfoText>
-        <AiOutlineEye size={28} fontWeight='700' color="#AEAEB2"></AiOutlineEye>
+        <AiOutlineEye size={24} fontWeight='700' color="#AEAEB2"></AiOutlineEye>
         <InfoText>34</InfoText>
       </ProjectInfos>
 

@@ -1,18 +1,15 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  width: 388px;
-  height: 368px;
+  width: 360px;
+  height: 290px;
 
   background: var(--bg-content);
   border-radius: 36px;
 
   display: flex;
   flex-direction: column;
-  padding: 61px;
-`
-export const ProjectLogo = styled.a`
-  padding: 16px 0 0 0;
+  padding: 42px;
 `
 
 export const ProjectName = styled.h3`
@@ -32,7 +29,7 @@ export const ProjectDescription = styled.span`
 
 export const ProjectInfos = styled.div`
   display: flex;
-  padding: 30px 0 0 0;
+  padding: 14px 0 0 0;
   align-items: center;
 `
 
@@ -44,7 +41,7 @@ export const InfoText = styled.span`
 `
 
 export const ProjectButton = styled.a`
-  margin: 40px 0 60px 0;
+  margin: 32px 0 60px 0;
   color: var(--blue);
   font-size: 1rem;
   font-weight: 700;

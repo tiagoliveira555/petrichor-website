@@ -43,11 +43,11 @@ export const GlobalStyle = createGlobalStyle`
   
   ::-webkit-scrollbar-thumb {
     background: var(--gray);
-    border-radius: 4px;
+    border-radius: 2px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--blue);
+    background: #59595C;
 }
 
   @media (prefers-color-scheme: dark) {
