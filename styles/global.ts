@@ -36,6 +36,20 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--gray);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--blue);
+}
+
   @media (prefers-color-scheme: dark) {
     html {
       color-scheme: dark;
