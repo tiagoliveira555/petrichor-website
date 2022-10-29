@@ -21,7 +21,7 @@ export const Navbar = styled.nav`
     gap: 92px;
 
     li {
-      color: var(--subtitle-color);
+      color: var(--gray);
       font-weight: 600;
       font-size: 18px;
     }
