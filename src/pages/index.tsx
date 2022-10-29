@@ -1,6 +1,6 @@
 import { Menubar } from "../components/Menubar" 
 import { Button } from "../components/Button"
-import { CardComponent } from "../components/CardComponent"
+import { CardComponent } from "../components/Card"
 import { RepoCategory } from "../components/RepoCategory"
 import { SubSectionFooter } from "../components/SubSectionFooter"
 
