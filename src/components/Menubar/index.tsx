@@ -11,7 +11,7 @@ export function Menubar() {
       <Navbar>
         <ul>
           <li>About us</li>
-          <li>Categories</li>
+          <li>Categories teste</li>
           <li>Source</li>
           <li>Contact</li>
         </ul>
