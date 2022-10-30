@@ -12,7 +12,6 @@ export function Menubar() {
         <ul>
           <li>About us</li>
           <li>Categories</li>
-          <li>Categories</li>
           <li>Source</li>
           <li>Contact</li>
         </ul>
