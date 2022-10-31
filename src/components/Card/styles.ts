@@ -41,6 +41,7 @@ export const InfoText = styled.span`
 `
 
 export const ProjectButton = styled.a`
+  width: 7rem;
   margin: 32px 0 60px 0;
   color: var(--blue);
   font-size: 1rem;
