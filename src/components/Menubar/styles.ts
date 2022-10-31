@@ -25,5 +25,18 @@ export const Navbar = styled.nav`
       font-weight: 600;
       font-size: 18px;
     }
+    
+
+    .dropdown-submenu {
+      display: none;
+      
+    }
+
+    .dropdown-submenu li {
+      font-size: 14px;
+      cursor: pointer;
+      
+    }
+    
   }
 `
