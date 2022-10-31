@@ -2,6 +2,8 @@ import { Menu, Logo, Navbar } from "./styles"
 
 import Image from "next/image"
 
+import { SingInButton } from "../SingInButton"
+
 export function Menubar() {
   return (
     <Menu>
@@ -28,6 +30,8 @@ export function Menubar() {
           </li>
           <li>Source</li>
           <li>Contact</li>
+          
+          <SingInButton />
         </ul>
       </Navbar>
     </Menu>

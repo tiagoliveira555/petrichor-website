@@ -24,7 +24,7 @@ export const Navbar = styled.nav`
     li {
       color: var(--gray);
       font-weight: 600;
-      font-size: 1.125rem;
+      font-size: 1rem;
 
       cursor: pointer;
     }
@@ -48,7 +48,7 @@ export const Navbar = styled.nav`
 
       position: absolute;
 
-      padding-left: .45rem;
+      padding-left: 2px;
     }
    
     .dropdown-submenu li {
