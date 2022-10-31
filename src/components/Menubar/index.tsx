@@ -1,4 +1,5 @@
 import { Menu, Logo, Navbar } from "./styles"
+
 import Image from "next/image"
 
 export function Menubar() {
@@ -16,15 +17,13 @@ export function Menubar() {
       <Navbar>
         <ul className="menu">
           <li>About us</li>
-          <li id="menu">
-            <a>Categories</a>
+          <li id="menu-dropdown">
+            <a>
+              Categories 
+            </a>
             <ul className="dropdown-submenu">
-              <li>
-                <a>Individual</a>
-              </li>
-              <li>
-                <a>Enterprise</a>
-              </li>
+              <li><a>Individual</a></li>
+              <li><a>Enterprise</a></li>
             </ul>
           </li>
           <li>Source</li>

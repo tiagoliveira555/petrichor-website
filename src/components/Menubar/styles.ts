@@ -14,29 +14,46 @@ export const Logo = styled.a`
 `
 
 export const Navbar = styled.nav`
-  ul {
+  .menu {
     display: flex;
     align-items: center;
     list-style: none;
+
     gap: 92px;
 
     li {
       color: var(--gray);
       font-weight: 600;
-      font-size: 18px;
+      font-size: 1.125rem;
+
+      cursor: pointer;
     }
-    
 
     .dropdown-submenu {
       display: none;
-      
+      list-style: none;
+
+      visibility: hidden;
+      opacity: 0;
+
     }
 
-    .dropdown-submenu li {
-      font-size: 14px;
-      cursor: pointer;
-      
+    #menu-dropdown:hover > .dropdown-submenu {
+      visibility: visible;
+      opacity: 1;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      position: absolute;
+
+      padding-left: .45rem;
     }
-    
+   
+    .dropdown-submenu li {
+      margin-top: 10px;
+      font-size: 1rem;
+    } 
   }
 `

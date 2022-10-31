@@ -1,17 +1,1 @@
-.menu li:hover > .dropdown-submenu {
-  display: block;
-  position: absolute;
-  
-}
 
-.dropdown-submenu{
-  margin-top: 1px;
-  display: none;
-  
-}
-
-.dropdown-submenu li{
-  margin-top: 10px;
-  /* background: gray; */
-  margin-left: .9em;
-}
