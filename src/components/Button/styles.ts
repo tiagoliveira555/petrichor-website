@@ -19,6 +19,17 @@ export const NormalButton = styled.button`
   align-items: center;
   justify-content: center;
   gap: 5px;
+
+  transition: filter 300ms;
+
+  &:hover {
+    filter: brightness(80%);
+  }
+
+  &:focus {
+    outline: 2px solid var(--blue-outline);
+    outline-offset: 2px;
+  }
 `;
 
 export const NoBgButton = styled.button`
@@ -40,4 +51,15 @@ export const NoBgButton = styled.button`
   align-items: center;
   justify-content: center;
   gap: 5px;
+
+  transition: filter 300ms;
+
+  &:hover {
+    filter: brightness(80%);
+  }
+
+  &:focus {
+    outline: 2px solid var(--blue-outline);
+    outline-offset: 2px;
+  }
 `;

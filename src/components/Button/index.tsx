@@ -12,16 +12,18 @@ export function Button({ text, hasLink, noBgButton }: ButtonTypes) {
   return (
     <>
       {noBgButton ? (
-        <NoBgButton>
-          <a href={hasLink}>{text}</a>  
-        </NoBgButton>
+        <a href={hasLink}>
+          <NoBgButton>
+            {text}  
+          </NoBgButton>
+        </a>
        
       ): (
-        <NormalButton>
-          <a href={hasLink}>
+        <a href={hasLink}>
+          <NormalButton>
             {text} 
-          </a>
-        </NormalButton>
+          </NormalButton>
+        </a>
       )}
     </>
   )
