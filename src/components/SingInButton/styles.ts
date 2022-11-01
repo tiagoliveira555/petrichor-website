@@ -21,8 +21,15 @@ export const GithubButton = styled.button`
 
   transition: color 300ms;
 
-  &:hover,
+  &:hover {
+    background: var(--bg);
+    color: var(--title-color);
+
+    outline: 2px solid var(--title-color);
+  }
+
   &:focus {
-    filter: brightness(80%);
+    outline: 2px solid var(--blue-outline);
+    outline-offset: 2px;
   }
 `

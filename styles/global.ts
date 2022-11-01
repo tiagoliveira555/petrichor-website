@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     --gray: #AEAEB2;
 
     --blue: #007AFF;
+    --blue-outline: #007AFF80;
     --blue-opacity: #007AFF05;
   }
 
