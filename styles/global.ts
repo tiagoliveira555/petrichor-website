@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
+import "@fontsource/inter"
+
 
 // Creating a GlobalStyle (root style) to set a default style in the app
 // I recommend to install the Styled-Components extesion to have the intellisense -> vscode-styled-components
