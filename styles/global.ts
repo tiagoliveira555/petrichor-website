@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     --bg-content: #F8F8F8;
 
     --title-color: #1C1C1E;
+    --black-outline: #1C1C1E50;
     --subtitle-color: #2C2C2E;
     --text-color: #333333;
 
