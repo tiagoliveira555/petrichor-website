@@ -24,7 +24,7 @@ export function Menubar() {
             <a>
               <span>Categories</span>
               <AiOutlineDown
-                size={14}
+                size={16}
                 color="#AEAEB2"
               ></AiOutlineDown>
             </a>
