@@ -41,9 +41,14 @@ export const Navbar = styled.nav`
 
       visibility: hidden;
       opacity: 0;
-
     }
-
+    #menu-dropdown a {
+      display: flex;
+      align-items: center;
+    }
+    #menu-dropdown a span{
+      padding-right: 4px;
+    }
     #menu-dropdown:hover > .dropdown-submenu {
       visibility: visible;
       opacity: 1;
@@ -56,10 +61,10 @@ export const Navbar = styled.nav`
 
       padding-left: 2px;
     }
-   
+
     .dropdown-submenu li {
       margin-top: 10px;
       font-size: 1rem;
-    } 
+    }
   }
 `
