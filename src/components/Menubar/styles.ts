@@ -11,6 +11,12 @@ export const Menu = styled.div`
 export const Logo = styled.a`
   width: 36px;
   height: 36px;
+  border-radius: 8px;
+
+  &:focus {
+    outline: 2px solid var(--blue-outline);
+    outline-offset: 2px;
+  }
 `
 
 export const Navbar = styled.nav`
