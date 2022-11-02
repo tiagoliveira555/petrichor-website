@@ -16,16 +16,14 @@ export const GithubButton = styled.button`
 
   display: flex;
   align-items: center;
-  
+
   gap: 6px;
 
   transition: color ease 200ms;
 
   &:hover {
-    background: var(--bg);
-    color: var(--title-color);
-
-    outline: 2px solid var(--black-outline);
+    background: var(--blue-opacity);
+    color: var(--blue);
   }
 
   &:focus {
