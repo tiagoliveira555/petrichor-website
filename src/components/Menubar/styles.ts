@@ -25,7 +25,7 @@ export const Navbar = styled.nav`
     align-items: center;
     list-style: none;
 
-    gap: 92px;
+    gap: 72px;
 
     li {
       color: var(--gray);
