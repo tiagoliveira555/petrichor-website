@@ -46,7 +46,7 @@ export const Navbar = styled.nav`
       display: flex;
       align-items: center;
     }
-    #menu-dropdown a span{
+    #menu-dropdown a span {
       padding-right: 4px;
     }
     #menu-dropdown:hover > .dropdown-submenu {
@@ -55,7 +55,8 @@ export const Navbar = styled.nav`
 
       display: flex;
       flex-direction: column;
-      align-items: center;
+      /* align-items: center; */
+      align-items: left;
 
       position: absolute;
 
@@ -63,8 +64,20 @@ export const Navbar = styled.nav`
     }
 
     .dropdown-submenu li {
+      display: flex;
       margin-top: 10px;
       font-size: 1rem;
+    }
+
+    .dropdown-submenu li span {
+      width: .8em;
+      visibility: hidden;
+    }
+
+    .dropdown-submenu li:hover > span {
+      color: var(--blue);
+      transition: 300ms;
+      visibility: visible;
     }
   }
 `

@@ -23,16 +23,15 @@ export function Menubar() {
           <li id="menu-dropdown">
             <a>
               <span>Categories</span>
-              <AiOutlineDown
-                size={16}
-                color="#AEAEB2"
-              ></AiOutlineDown>
+              <AiOutlineDown size={16} color="#AEAEB2"></AiOutlineDown>
             </a>
             <ul className="dropdown-submenu">
               <li>
+                <span>&#9900;</span>
                 <a>Individual</a>
               </li>
               <li>
+                <span>&#9900;</span>
                 <a>Enterprise</a>
               </li>
             </ul>
