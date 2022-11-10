@@ -55,7 +55,6 @@ export const Navbar = styled.nav`
 
       display: flex;
       flex-direction: column;
-      /* align-items: center; */
       align-items: left;
 
       position: absolute;
