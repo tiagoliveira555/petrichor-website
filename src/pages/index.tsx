@@ -13,6 +13,7 @@ import {
   CompaniesGroup,
   FooterSection
 } from "./styles"
+
 import Image from "next/image"
 
 export default function Home() {
@@ -64,7 +65,7 @@ export default function Home() {
         </AboutUs>
 
         <CompaniesGroup>
-          <h3>Trusted by workers</h3>
+          <h3>Trusted by workers at</h3>
           <div className="companies">
             <Image src='/assets/bradesco.svg' width='188px' height='42' alt='Bradesco' />
             <Image src='/assets/marketData.svg' width='196px' height='42' alt='MarketData' />

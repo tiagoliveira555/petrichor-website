@@ -47,7 +47,7 @@ export const AboutUs = styled.section`
   h3 {
     font-size: 1.12rem;
     color: var(--subtitle-color);
-    font-weight: 800;
+    font-weight: 900;
 
     padding-bottom: 42px;
   }
