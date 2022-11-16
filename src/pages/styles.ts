@@ -27,8 +27,21 @@ export const ButtonGroup = styled.div`
 
 export const CardGroup = styled.section`
   display: flex;
-  gap: 24px;
-  padding: 0 20px;
+
+  .inner {
+    display: flex;
+    width: 100vw;
+  }
+
+  .item {
+    gap: 24px;
+    margin: 0 20px;
+  }
+
+  .carousel {
+    cursor: grab;
+    overflow: hidden;
+  }
 `
 
 export const CategoriesGroup = styled.section`
