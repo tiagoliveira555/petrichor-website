@@ -55,7 +55,9 @@ export const CategoriesGroup = styled.section`
 `
 
 export const AboutUs = styled.section`
-  margin: 0 160px 160px;
+  max-width: 80%;
+  
+  margin: 0 auto 160px;
 
   h3 {
     font-size: 1.12rem;
