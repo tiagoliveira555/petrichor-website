@@ -11,10 +11,7 @@
   "dependencies": {
     "@fontsource/inter": "^4.5.14",
     "firebase": "^9.14.0",
-<<<<<<< HEAD
-=======
     "framer-motion": "^7.6.7",
->>>>>>> feature
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
