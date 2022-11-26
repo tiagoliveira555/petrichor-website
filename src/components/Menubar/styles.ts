@@ -41,25 +41,42 @@ export const Navbar = styled.nav`
 
       visibility: hidden;
       opacity: 0;
-
     }
-
+    #menu-dropdown a {
+      display: flex;
+      align-items: center;
+    }
+    #menu-dropdown a span {
+      padding-right: 4px;
+    }
     #menu-dropdown:hover > .dropdown-submenu {
       visibility: visible;
       opacity: 1;
 
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: left;
 
       position: absolute;
 
       padding-left: 2px;
     }
-   
+
     .dropdown-submenu li {
+      display: flex;
       margin-top: 10px;
       font-size: 1rem;
-    } 
+    }
+
+    .dropdown-submenu li span {
+      width: .8em;
+      visibility: hidden;
+    }
+
+    .dropdown-submenu li:hover > span {
+      color: var(--blue);
+      transition: 300ms;
+      visibility: visible;
+    }
   }
 `
