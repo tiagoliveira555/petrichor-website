@@ -4,8 +4,9 @@ import Image from "next/image"
 
 import { SingInButton } from "../SingInButton"
 import { AiOutlineDown } from "react-icons/ai"
+import { HomeProps } from "../../pages"
 
-export function Menubar() {
+export function Menubar({ session }: HomeProps) {
   return (
     <Menu>
       <Logo href="#">
@@ -39,7 +40,7 @@ export function Menubar() {
           <li>Source</li>
           <li>Contact</li>
 
-          <SingInButton />
+          <SingInButton session={session} />
         </ul>
       </Navbar>
     </Menu>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const GithubButton = styled.button`
   border: none;
@@ -9,7 +9,7 @@ export const GithubButton = styled.button`
   height: 42px;
 
   padding: 0 12px;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
 
   font-size: 1rem;
   font-weight: 700;
@@ -20,6 +20,12 @@ export const GithubButton = styled.button`
   gap: 6px;
 
   transition: color ease 200ms;
+
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
 
   &:hover {
     background: var(--blue-opacity);

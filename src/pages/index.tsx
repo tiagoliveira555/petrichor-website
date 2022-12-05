@@ -1,37 +1,47 @@
-import { Menubar } from "../components/Menubar" 
+import { Menubar } from "../components/Menubar"
 import { Button } from "../components/Button"
 import { CardComponent } from "../components/Card"
 import { RepoCategory } from "../components/RepoCategory"
 import { SubSectionFooter } from "../components/SubSectionFooter"
-import {motion} from 'framer-motion'
-import { useEffect, useState, useRef } from "react"
+import { motion } from "framer-motion"
 
-import { 
-  Title, 
-  ButtonGroup, 
-  CardGroup, 
+import { getSession } from "next-auth/client"
+
+import {
+  Title,
+  ButtonGroup,
+  CardGroup,
   CategoriesGroup,
   AboutUs,
   CompaniesGroup,
-  FooterSection
-} from "./styles"
+  FooterSection,
+} from "../../styles/styles"
 
 import Image from "next/image"
 
-export default function Home() {
+export interface HomeProps {
+  session: {
+    user: {
+      name: string
+      email: string | null
+      image: string
+    }
+    expires: string
+  }
+}
 
-  const carousel = useRef();
-  const [width, setWidth] = useState(0)
-  useEffect(()=>{
-    console.log(carousel.current)
-    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
-  }, [])
-
+export default function Home({ session }: HomeProps) {
+  //   const carousel = useRef()
+  //   const [width, setWidth] = useState(0)
+  //   useEffect(() => {
+  //     console.log(carousel.current)
+  //     setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+  //   }, [])
 
   return (
     <>
       <header>
-        <Menubar />
+        <Menubar session={session} />
 
         <Title>
           Top-notch code from <span>outstanding</span> engineers.
@@ -49,16 +59,8 @@ export default function Home() {
 
       <main>
         <CardGroup>
-          <motion.div
-            ref={carousel}
-            className="carousel"
-            whileTap={{ cursor: "grabbing" }}
-          >
-            <motion.div
-              className="inner"
-              drag="x"
-              dragConstraints={{ right: 0, left: -width }}
-            >
+          <motion.div className="carousel" whileTap={{ cursor: "grabbing" }}>
+            <motion.div className="inner" drag="x">
               <motion.div className="item">
                 <CardComponent />
               </motion.div>
@@ -162,4 +164,14 @@ export default function Home() {
       </footer>
     </>
   )
+}
+
+export async function getServerSideProps(context: any) {
+  const session = await getSession(context)
+
+  return {
+    props: {
+      session,
+    },
+  }
 }

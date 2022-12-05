@@ -1,13 +1,23 @@
-import type { AppProps } from 'next/app'
-import { GlobalStyle } from '../../styles/global'
+import type { AppProps } from "next/app"
+import { GlobalStyle } from "../../styles/global"
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return(
+import { Provider as NextauthProvider } from "next-auth/client"
+import { Session } from "next-auth"
+
+function MyApp({
+  Component,
+  pageProps,
+}: AppProps<{
+  session: Session
+}>) {
+  return (
     <>
-      <Component {...pageProps} />
-      <GlobalStyle />
-    </>  
-  ) 
+      <NextauthProvider session={pageProps.session}>
+        <Component {...pageProps} />
+        <GlobalStyle />
+      </NextauthProvider>
+    </>
+  )
 }
 
 export default MyApp

@@ -1,27 +1,43 @@
-import { GithubButton } from './styles'
+import { GithubButton } from "./styles"
 
-import { VscGithubInverted } from 'react-icons/vsc'
-import { MdOutlineClose } from 'react-icons/md'
+import { VscGithubInverted } from "react-icons/vsc"
+import { MdOutlineClose } from "react-icons/md"
 
-import { useState } from 'react'
+import { getSession, signIn, signOut } from "next-auth/client"
+import { HomeProps } from "../../pages"
 
+import Image from "next/image"
 
-export function SingInButton() {
-  const [ logged,  setLogged ] = useState(false)  
-
+export function SingInButton({ session }: HomeProps) {
   return (
     <>
-      {logged ? (
-        <GithubButton onClick={() => setLogged(!logged)}>
-          <span>Pietro Rhyan</span>
-          <MdOutlineClose size='18px' />
+      {session ? (
+        <GithubButton onClick={() => signOut()}>
+          <Image
+            width={30}
+            height={30}
+            src={session.user.image}
+            alt="User Image"
+          />
+          <span>{session.user.name}</span>
+          <MdOutlineClose size="18px" />
         </GithubButton>
       ) : (
-        <GithubButton onClick={() => setLogged(!logged)}>
-          <i><VscGithubInverted size='18px' /></i>
+        <GithubButton onClick={() => signIn("github")}>
+          <VscGithubInverted size="18px" />
           <span>Sign in with Github</span>
         </GithubButton>
       )}
     </>
   )
+}
+
+export async function getServerSideProps(context: any) {
+  const session = await getSession(context)
+
+  return {
+    props: {
+      session,
+    },
+  }
 }
